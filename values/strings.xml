@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Piggy_Bank</string>
+    <string name="sidemenu">sideMenu</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="title">小豬撲滿</string>
+    <string name="useraccount">帳號</string>
+    <string name="userpassword">密碼</string>
+    <string name="hiNt">沒有帳號嗎註冊一個吧</string>
+    <string name="_110816002">110816002</string>
+    <string name="titleEng">Piggy Bank</string>
+    <string name="record">每日記帳</string>
+    <string name="summary">結算總表</string>
+    <string name="Payment_Memorandum">繳費備忘錄</string>
+    <string name="raising_pig">養小豬</string>
+    <string name="copyright">版權宣告</string>
+    <string name="insert">新增</string>
+    <string name="update">修改</string>
+    <string name="delete">刪除</string>
+    <string name="ntd">NTD</string>
+    <string name="txvvDay">請點選以選擇日期</string>
+    <string name="in">收入</string>
+    <string name="out">支出</string>
+    <string name="data">日期：</string>
+    <string name="item">項目：</string>
+    <string name="inputitem">請輸入項目</string>
+    <string name="price">金額：</string>
+    <string name="docu">說明：測試帳密皆為110816002</string>
+    <string name="save">儲存</string>
+    <string name="cancel">取消</string>
+    <string name="good">恭喜你已成功累積了</string>
+    <string name="howmanypigs">隻小豬</string>
+    <string name="fighting">請繼續努力存滿小豬撲滿!</string>
+    <string name="rule">當收入大於支出並且以100為進位可累積一隻小豬!</string>
+    <string name="ttt">按一下可編輯，長按可刪除</string>
+</resources>

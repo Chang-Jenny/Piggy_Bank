@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Piggy_Bank</string>
+    <string name="sidemenu">sideMenu</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title">貯金箱</string>
+    <string name="useraccount">口座番号</string>
+    <string name="userpassword">パスワード</string>
+    <string name="hiNt">アカウントをお持ちではありませんか？アカウントにサインアップしてください</string>
+    <string name="_110816002">110816002</string>
+    <string name="titleEng">Piggy Bank</string>
+    <string name="record">日刊紙</string>
+    <string name="summary">決済</string>
+    <string name="Payment_Memorandum">支払い覚書</string>
+    <string name="raising_pig">豚を育てる</string>
+    <string name="copyright">著作権表示</string>
+    <string name="insert">新着</string>
+    <string name="update">改訂</string>
+    <string name="delete">消去</string>
+    <string name="ntd">NTD</string>
+    <string name="txvvDay">クリックして日付を選択してください</string>
+    <string name="in">所得</string>
+    <string name="out">支出</string>
+    <string name="data">日にち：</string>
+    <string name="item">事業：</string>
+    <string name="inputitem">項目を入力してください</string>
+    <string name="price">お金：</string>
+    <string name="docu">説明：テストアカウントのパスワードは110816002です</string>
+    <string name="save">お店</string>
+    <string name="cancel">キャンセル</string>
+    <string name="good">おめでとうございます、あなたは首尾よく蓄積しました</string>
+    <string name="howmanypigs">数匹の小さなブタ</string>
+    <string name="fighting">貯金箱を維持するために頑張ってください！!</string>
+    <string name="rule">収入が支出を上回り、100に切り上げると、豚を貯めることができます。</string>
+    <string name="ttt">1回押すと編集し、長押しすると削除します</string>
+</resources>
