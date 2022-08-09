@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item android:id="@+id/menu_record"
+            android:icon="@drawable/record"
+            android:title="@string/record" />
+
+        <item android:id="@+id/menu_calculate"
+            android:icon="@drawable/calculate"
+            android:title="@string/summary" />
+
+        <item android:id="@+id/menu_remind"
+            android:icon="@drawable/remind"
+            android:title="@string/Payment_Memorandum" />
+
+        <item android:id="@+id/menu_pig"
+            android:icon="@drawable/pig"
+            android:title="@string/raising_pig" />
+
+        <item android:id="@+id/menu_copyright"
+            android:icon="@drawable/ic_copyright"
+            android:title="@string/copyright" />
+
+    </group>
+</menu>
