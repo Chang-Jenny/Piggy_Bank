@@ -11,9 +11,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +44,7 @@ public class pig extends AppCompatActivity
     String comp_2="支出";
     int counter=0;
     TextView txv_pagepig_2;
+    ImageView pig;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,13 +64,14 @@ public class pig extends AppCompatActivity
         actionBarDrawerToggle.syncState();
 
         txv_pagepig_2 = (TextView) findViewById(R.id.txv_pagepig_2);
+        pig = (ImageView) findViewById(R.id.imgPig);
         //開啟或建立資料庫
         db = openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE,null);
 
         //建立資料表
         String createTable = "CREATE TABLE IF NOT EXISTS " + TB_NAME +
                 "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "day VARCHAR(32)," +
+                "day DATE," +
                 "name VARCHAR(32)," +
                 "type VARCHAR(32)," +
                 "category VARCHAR(32),"+
@@ -78,8 +83,14 @@ public class pig extends AppCompatActivity
 
         //空的則寫入測試資料
         if(cur.getCount()==0){
-            addData("2022/1/10","productA","收入","薪資","1200");
-            addData("2022/1/10","productB","支出","食","350");
+            addData("2022-01-10","productA","收入","其他","2400");
+            addData("2022-01-10","早餐","支出","食","350");
+            addData("2022-01-12","代班","收入","薪資","168");
+            addData("2022-01-13","教科書","支出","育","500");
+            addData("2022-01-15","午餐","支出","食","168");
+            addData("2022-01-15","車票","支出","行","168");
+            addData("2022-01-16","襯衫","支出","衣","168");
+            addData("2022-01-16","扭蛋","支出","樂","168");
         }
 
         //查詢資料
@@ -105,6 +116,16 @@ public class pig extends AppCompatActivity
         }
 
         txv_pagepig_2.setText(Integer.toString(counter));
+        System.out.println(counter);
+        int judge = counter%100;
+        if(judge>=3 && judge<5)
+            pig.setImageResource(R.drawable.foot);
+        else if(judge>=5 && judge<8)
+            pig.setImageResource(R.drawable.pig);
+        else if(judge>=8)
+            pig.setImageResource(R.drawable.money);
+        else
+            pig.setImageResource(R.drawable.tree);
 
     }
 

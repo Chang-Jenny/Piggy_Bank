@@ -94,7 +94,7 @@ public class calculate extends AppCompatActivity
         //建立資料表
         String createTable = "CREATE TABLE IF NOT EXISTS " + TB_NAME +
                 "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "day VARCHAR(32)," +
+                "day DATE," +
                 "name VARCHAR(32)," +
                 "type VARCHAR(32)," +
                 "category VARCHAR(32),"+
@@ -105,9 +105,14 @@ public class calculate extends AppCompatActivity
         cur = db.rawQuery("SELECT * FROM "+TB_NAME, null);
         //空的則寫入測試資料
         if(cur.getCount()==0){
-            addData("2022/1/10","productA","收入","薪資","1200");
-            addData("2022/1/10","productB","支出","食","350");
-            addData("2022/1/12","代班","收入","薪資","168");
+            addData("2022-01-10","productA","收入","其他","2400");
+            addData("2022-01-10","早餐","支出","食","350");
+            addData("2022-01-12","代班","收入","薪資","168");
+            addData("2022-01-13","教科書","支出","育","500");
+            addData("2022-01-15","午餐","支出","食","168");
+            addData("2022-01-15","車票","支出","行","168");
+            addData("2022-01-16","襯衫","支出","衣","168");
+            addData("2022-01-16","扭蛋","支出","樂","168");
         }
 
 
@@ -147,8 +152,8 @@ public class calculate extends AppCompatActivity
                 out_2.setText(Integer.toString(out));
             }
             else{
-                in_2.setText("None");
-                out_2.setText("None");
+                in_2.setText("0");
+                out_2.setText("0");
             }
 
         }
@@ -156,7 +161,12 @@ public class calculate extends AppCompatActivity
     }
     @Override
     public void onDateSet(DatePicker v, int y, int m, int d) {
-        show.setText(y+"/"+(m+1)+"/"+d);
+        if(m<10){
+            show.setText(y+"-0"+(m+1)+"-"+d);
+        }
+        else{
+            show.setText(y+"-"+(m+1)+"-"+d);
+        }
     }
 
     //新增

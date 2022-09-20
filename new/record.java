@@ -107,7 +107,7 @@ public class record extends AppCompatActivity
         //建立資料表
         String createTable = "CREATE TABLE IF NOT EXISTS " + TB_NAME +
                 "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "day VARCHAR(32)," +
+                "day DATE," +
                 "name VARCHAR(32)," +
                 "type VARCHAR(32)," +
                 "category VARCHAR(32),"+
@@ -119,8 +119,14 @@ public class record extends AppCompatActivity
 
         //空的則寫入測試資料
         if(cur.getCount()==0){
-            addData("2022/1/10","productA","收入","薪資","1200");
-            addData("2022/1/10","productB","支出","食","350");
+            addData("2022-01-10","productA","收入","其他","2400");
+            addData("2022-01-10","早餐","支出","食","350");
+            addData("2022-01-12","代班","收入","薪資","168");
+            addData("2022-01-13","教科書","支出","育","500");
+            addData("2022-01-15","午餐","支出","食","168");
+            addData("2022-01-15","車票","支出","行","168");
+            addData("2022-01-16","襯衫","支出","衣","168");
+            addData("2022-01-16","扭蛋","支出","樂","168");
         }
 
         //建立adapter物件
@@ -148,7 +154,12 @@ public class record extends AppCompatActivity
 
     @Override
     public void onDateSet(DatePicker v, int y, int m, int d) {
-        txv_time.setText(y+"/"+(m+1)+"/"+d);
+        if(m<10){
+            txv_time.setText(y+"-0"+(m+1)+"-"+d);
+        }
+        else{
+            txv_time.setText(y+"-"+(m+1)+"-"+d);
+        }
     }
 
     @Override
@@ -272,7 +283,7 @@ public class record extends AppCompatActivity
     }
 
     //更新
-    private void update(String day, String name, String type, String price,String cat, int id){
+    private void update(String day, String name, String type, String cat,String price, int id){
         ContentValues cv = new ContentValues(5);
         cv.put(FROM[0],day);
         cv.put(FROM[1],name);
