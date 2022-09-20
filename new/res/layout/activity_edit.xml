@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4D993"
+    android:orientation="vertical"
+    tools:context=".edit">
+
+    <TextView
+        android:id="@+id/txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal"
+        android:layout_marginTop="@dimen/vertical"
+        android:layout_marginRight="@dimen/horizontal"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="@dimen/horizontal"
+        android:layout_marginTop="@dimen/vertical"
+        android:layout_marginRight="@dimen/horizontal"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal"
+            android:layout_marginRight="@dimen/horizontal"
+            android:onClick="onsave"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal"
+            android:layout_marginRight="@dimen/horizontal"
+            android:onClick="oncancel"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</LinearLayout>

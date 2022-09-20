@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="#F2C083"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        app:srcCompat="@drawable/pig" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/horizontal"
+        android:text="@string/_110816002"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/userE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal"
+        android:layout_marginTop="@dimen/horizontal"
+        android:ellipsize="end"
+        android:text="s110816002@stu.ntue.edu.tw"
+        android:textSize="12sp" />
+</LinearLayout>
