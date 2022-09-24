@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Piggy_Bank</string>
+    <string name="sidemenu">sideMenu</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="title">小豬撲滿</string>
+    <string name="useraccount">帳號</string>
+    <string name="userpassword">密碼</string>
+    <string name="hiNt">沒有帳號嗎註冊一個吧</string>
+    <string name="_110816002">110816002</string>
+    <string name="titleEng">Piggy Bank</string>
+    <string name="record">每日記帳</string>
+    <string name="summary">結算總表</string>
+    <string name="Payment_Memorandum">繳費備忘錄</string>
+    <string name="raising_pig">養小豬</string>
+    <string name="copyright">版權宣告</string>
+    <string name="search">每日查詢</string>
+    <string name="insert">新增</string>
+    <string name="update">修改</string>
+    <string name="delete">刪除</string>
+    <string name="ntd">NTD</string>
+    <string name="txvvDay">請點選以選擇日期</string>
+    <string name="in">收入</string>
+    <string name="out">支出</string>
+    <string name="data">日期：</string>
+    <string name="item">項目：</string>
+    <string name="inputitem">請輸入項目</string>
+    <string name="price">金額：</string>
+    <string name="docu">說明：測試帳密皆為110816002</string>
+    <string name="save">儲存</string>
+    <string name="cancel">取消</string>
+    <string name="good">恭喜你已成功累積</string>
+    <string name="howmanypigs">隻小豬等級</string>
+    <string name="fighting">請繼續努力存滿小豬撲滿!</string>
+    <string name="rule">當收入大於支出並且以100為進位可累積一隻小豬!</string>
+    <string name="ttt">按一下可編輯，長按可刪除</string>
+    <string name="title_activity_search">search</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="enter">Enter</string>
+    <string name="year">年</string>
+
+
+    <string-array name="catrgory">
+        <item>食</item>
+        <item>衣</item>
+        <item>住</item>
+        <item>行</item>
+        <item>育</item>
+        <item>樂</item>
+        <item>薪資</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>
